@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "description": "Proyecto final de la materia ingenieria de software",
     "main": "index.js",
+    "engines": {
+        "node": "14.18.0"
+    },
     "scripts": {
         "postinstall": "tsc",
         "start": "node dist/index.js",
