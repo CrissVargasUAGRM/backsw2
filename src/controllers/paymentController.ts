@@ -27,7 +27,7 @@ export const createPayment = async(req: Request, res: Response) => {
     const charge = await Charge.create(chargeData);
 
     return res.status(200).send(charge);
-}
+};
 /* 
 redirect_url: 'https://temperatureappweb.netlify.app/client/home',
         cancel_url: `${process.env.DOMAIN}/cancel-payment` */
