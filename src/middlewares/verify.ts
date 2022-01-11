@@ -4,6 +4,7 @@ import { NextFunction, Request, Response } from "express";
 
 export const emailDuplicate = async(req: Request, res: Response, next: NextFunction) => {
     const userEmail = req.body.email;
+    
     const emailUser: QueryResult = await pool.query('SELECT users.email FROM users WHERE users.email = $1', [userEmail]);
     if(emailUser.rows.length > 0){
         return res.status(400).json({message: 'El email ya existe'});

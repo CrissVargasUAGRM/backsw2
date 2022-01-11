@@ -23,7 +23,7 @@ app.use(cors({
 //DATA BASE CONNECTION
 sequelize.authenticate()
     .then(async () => {
-        await sequelize.sync({logging: true});
+        await sequelize.sync({logging: false});
         console.log(`Conectado a la base de datos`);
     }
 ).catch((error) => {

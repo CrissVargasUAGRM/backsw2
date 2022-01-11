@@ -50,7 +50,4 @@ export const registerConsulta = async (req: Request, res: Response) => {
   agent.handleRequest(intentMap);
 };
 
-export const reservarConsulta = async(req: Request, res: Response) => {
-    const {username,client,email,telefono} = req.body;
-    
-}
+

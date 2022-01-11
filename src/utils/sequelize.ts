@@ -12,6 +12,6 @@ export default new Sequelize(process.env.DBURL as string, {
             rejectUnauthorized: false
         }
     },
-    logging: true
+    logging: false,
 });
 

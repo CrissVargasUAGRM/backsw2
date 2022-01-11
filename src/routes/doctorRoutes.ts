@@ -3,8 +3,8 @@ import * as doctorController from "../controllers/doctorController";
 
 const router = Router();
 
-router.post('/registerDoctor', doctorController.registerDoctor);
+ router.post('/registerDoctor', doctorController.registerDoctor);
 router.get('/doctors', doctorController.getAllDoctors);
-router.get('/doctorclinic/:clinic', doctorController.getDoctorsClinic);
+router.get('/doctorclinic/:clinic', doctorController.getDoctorsClinic); 
 
 export default router;
